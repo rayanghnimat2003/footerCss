@@ -1,0 +1,155 @@
+@import './base.css';
+
+/* start header*/
+.active {
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1.65px 8.24px 0px #0000001A;
+    padding: 20px 0;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header .logo a {
+    color: var(--maincolor);
+}
+
+.header .logo img {
+    width: 40px;
+}
+
+.header .nav a {
+    color: #101928;
+}
+
+.header .auth a {
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.header .auth a:first-of-type {
+    border: 1px solid var(--maincolor);
+
+    color: var(--maincolor);
+}
+
+.header .auth a:last-of-type {
+    background-color: var(--maincolor);
+    color: #fff;
+
+}
+
+@media (max-width: 992px) {
+    .header .nav {
+        display: none;
+    }
+}
+
+/*end header*/
+
+
+
+/*start footer*/
+.footer {
+    background-color: #393E46;
+    ;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .row {
+    gap: 20px;
+}
+
+.hello {
+    gap: 16px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+
+    color: #fff;
+}
+
+.footer .start-footer,
+.footer .end-footer {
+    width: calc((100% - 40px) / 2);
+}
+
+.start-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.footer .start-footer .iconsimg {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.footer .start-footer .iconsimg img {
+    width: 35px;
+}
+.footer .start-footer .iconsimg a {
+    font-size: 14px;
+}
+.footer .start-footer p{
+line-height: 20px;
+font-size: 14px;
+font-weight: 200;
+}
+
+.footer .start-footer .icons img{
+    border :1px solid #fff;
+    width:15px;
+    height:15px;
+    padding: 10px;
+    box-sizing: content-box;
+
+}
+.footer .start-footer .icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer .end-footer .row {
+ justify-content: space-evenly;
+ align-items: flex-start;
+}
+
+.end-footer .input-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.end-footer .input-form ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
